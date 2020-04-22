@@ -1,0 +1,8 @@
+.mat-dialog-actions{
+    display:flex;
+    justify-content:flex-end;
+}
+
+::ng-deep .mat-dialog-content {
+    overflow-y: hidden !important;
+}
