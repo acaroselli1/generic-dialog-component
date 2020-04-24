@@ -1,6 +1,31 @@
+
+.mat-dialog-title{
+    font-size:24px;
+}
+
 .mat-dialog-actions{
     display:flex;
     justify-content:flex-end;
+}
+
+.mat-dialog-content {
+    text-align:center;
+    padding:13px 0px 25px 0px;
+    font-size:16px;
+}
+
+span {
+    display:block;
+}
+
+.submit-button {
+    background-color:#7F5EBA;
+    color:white;
+}
+
+.submit-button[disabled=true] {
+    background-color:rgba(127,94,186, .4);
+    color: rgba(255,255,255,.4)
 }
 
 ::ng-deep .mat-dialog-content {

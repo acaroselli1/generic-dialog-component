@@ -1,9 +1,13 @@
 <h1 mat-dialog-title>{{data.title}}</h1>
 <div mat-dialog-content>
-    <p>{{data.content}}</p>
-    <mat-checkbox *ngIf="data.includeCheckbox" [(ngModel)]="checked">Apply data</mat-checkbox>
+  <p>
+    <span>Tracking Number - TS{{data.trackingNumber}}</span>
+    <span>{{data.fileName}}</span>
+    <span>Tiers Submitted: {{data.aspanspanrovedTiersSubmitted}}</span>
+    <span>Errors: {{data.errors}}</span>
+  </p>
 </div>
 <div mat-dialog-actions>
-    <button mat-button>{{data.button1Text}}</button>
-    <button mat-button>{{data.button2Text}}</button>
+    <button mat-button [mat-dialog-close]="true">{{data.button2Text}}</button>
+    <button mat-button class="submit-button">{{data.button1Text}}</button>
 </div>
