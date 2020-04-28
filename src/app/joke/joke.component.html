@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="card">
+        <img *ngIf="loading" src="https://media.giphy.com/media/fzTKGYBpzSvEQ/source.gif">
+        <div class="card-body joke-text">{{jokeText}}</div>
+    </div>
+    <button class="btn btn-primary" (click)="getNextJoke()">Next Joke</button>
+</div>

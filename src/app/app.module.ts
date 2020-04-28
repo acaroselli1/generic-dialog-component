@@ -9,12 +9,16 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import { JokeComponent } from './joke/joke.component';
+import { HttpClientModule } from '@angular/common/http';
+import { JokeService } from './joke/joke.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     //Add dialog component name below
-    GenericDialogComponent
+    GenericDialogComponent,
+    JokeComponent
   ],
   entryComponents:[
     //Also add dialog component name below
@@ -22,6 +26,7 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     //Add module below
@@ -30,7 +35,7 @@ import { FormsModule } from '@angular/forms';
     MatCheckboxModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [JokeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
